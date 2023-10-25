@@ -12,6 +12,7 @@ struct LazyVGridView: View {
     private var icons = ["pencil", "trash", "printer.fill", "folder", "tray", "hare", "headphones", "ant", "mic", "plus.bubble", "video", "leaf"]
     
     private var gridItems = [GridItem(.flexible(), spacing: 20), GridItem(.flexible(), spacing: 50), GridItem(.flexible())]
+    private var a: [Any] = []
 
     var body: some View {
         // 1
@@ -42,6 +43,3 @@ struct LazyVGridView: View {
     }
 }
 
-#Preview {
-    LazyVGridView()
-}

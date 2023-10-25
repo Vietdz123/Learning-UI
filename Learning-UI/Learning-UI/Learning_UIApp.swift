@@ -12,6 +12,8 @@ struct Learning_UIApp: App {
     var body: some Scene {
         WindowGroup {
             FrameworkView()
+//            NavigationStackView()
+//            FrameworkView()
             //            LazyVGridView()
         }
     }

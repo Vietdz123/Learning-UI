@@ -9,17 +9,18 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    let widthScreen = UIScreen.main.bounds.width
+    var framework: Framework
+    @Binding var isPresenting: Bool
     
     var body: some View {
         
         VStack(spacing: 0) {
             Button(action: {
-                
+                isPresenting = false
             }, label: {
                Image(systemName: "xmark")
                     .resizable()
-                    .renderingMode(.template)
+                    .renderingMode(.original)
                     .foregroundColor(Color(.label))
                     .frame(width: 24, height: 24)
                     .frame(width: 44, height: 44)
@@ -28,14 +29,14 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
-            FrameworkGridView(framework: MockData.sampleFramework)
+            FrameworkGridView(framework: framework)
         
             
-            Text(MockData.sampleFramework.description)
+            Text(framework.description)
                 .font(.body)
                 .padding()
             
-            Spacer()
+//            Spacer()
             
             Button {
                 
@@ -43,8 +44,6 @@ struct FrameworkDetailView: View {
                 Text("learn more")
                     .font(.title2)
                     .foregroundColor(.white)
-//                    .frame(maxWidth: .infinity)
-//                    .frame(height: 48)
                     .frame(width: widthScreen - 64, height: (widthScreen - 64) / 5)
                     .background(
                         RoundedRectangle(cornerRadius: 16)
@@ -54,18 +53,14 @@ struct FrameworkDetailView: View {
                 
             }
             
-
+            Spacer()
+            
         }
-        
-
-        
     }
-    
-    
 }
 
 #Preview {
-    FrameworkDetailView()
+    FrameworkDetailView(framework: MockData.sampleFramework, isPresenting: .constant(false))
 }
 
 

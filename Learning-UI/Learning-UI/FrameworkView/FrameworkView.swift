@@ -9,32 +9,52 @@ import SwiftUI
 
 struct FrameworkView: View {
     
+    @StateObject var viewModel = FrameworkViewModel()
+    
     let colums: [GridItem] = [GridItem(.flexible()),
                               GridItem(.flexible()),
                               GridItem(.flexible())]
     
     var body: some View {
         
-        
+
         VStack {
 //            HStack{
 //                Text("Home")
 //            }.frame(height: 48)
-            NavigationView {
+            NavigationStack {
                 ScrollView {
                     LazyVGrid(columns: colums) {
                         ForEach(MockData.frameworks) { framework in
-                            FrameworkGridView(framework: framework)
+                            NavigationLink {
+                                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isPresenting: $viewModel.isShowingDetailView)
+                            } label: {
+                                FrameworkGridView(framework: framework)
+                            }
+
+                            
+    
                         }
                     }
                 }
                 .padding(.bottom, 0.1)
+                .border(.yellow, width: 10)
                 .navigationTitle("Siuuu")
+
             }
            
         }
-
         
+
+//        Image("luffy")
+//            .frame(width: 150, height: 200)
+    }
+}
+
+struct WeatherDayView: View {
+    var body: some View {
+        MyViewController()
+            .frame(width: 150, height: 200)
     }
 }
 
@@ -64,6 +84,3 @@ struct FrameworkGridView: View {
 }
 
 
-#Preview {
-    FrameworkView()
-}

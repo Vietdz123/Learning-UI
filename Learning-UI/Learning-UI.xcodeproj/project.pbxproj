@@ -7,26 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046B77062AE8B99400E1CC48 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B77052AE8B99400E1CC48 /* MyViewController.swift */; };
+		046B77082AE8BB3700E1CC48 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B77072AE8BB3700E1CC48 /* ImageController.swift */; };
+		046B770B2AE8C6C200E1CC48 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B770A2AE8C6C200E1CC48 /* NavigationStackView.swift */; };
 		048440092AE7AB4400A19AA8 /* Learning_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048440082AE7AB4400A19AA8 /* Learning_UIApp.swift */; };
-		0484400B2AE7AB4400A19AA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484400A2AE7AB4400A19AA8 /* ContentView.swift */; };
+		0484400B2AE7AB4400A19AA8 /* FrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484400A2AE7AB4400A19AA8 /* FrameworkView.swift */; };
 		0484400D2AE7AB4600A19AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484400C2AE7AB4600A19AA8 /* Assets.xcassets */; };
 		048440102AE7AB4600A19AA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484400F2AE7AB4600A19AA8 /* Preview Assets.xcassets */; };
 		048440172AE7B21800A19AA8 /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048440162AE7B21800A19AA8 /* LazyVGridView.swift */; };
 		0484401A2AE7BB6800A19AA8 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048440192AE7BB6800A19AA8 /* MockData.swift */; };
 		0484401F2AE7CA3E00A19AA8 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484401E2AE7CA3E00A19AA8 /* FrameworkDetailView.swift */; };
 		048440212AE7D03200A19AA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048440202AE7D03200A19AA8 /* Extensions.swift */; };
+		048440232AE8AAF100A19AA8 /* FrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048440222AE8AAF100A19AA8 /* FrameworkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046B77052AE8B99400E1CC48 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		046B77072AE8BB3700E1CC48 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		046B770A2AE8C6C200E1CC48 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		048440052AE7AB4400A19AA8 /* Learning-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048440082AE7AB4400A19AA8 /* Learning_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_UIApp.swift; sourceTree = "<group>"; };
-		0484400A2AE7AB4400A19AA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0484400A2AE7AB4400A19AA8 /* FrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkView.swift; sourceTree = "<group>"; };
 		0484400C2AE7AB4600A19AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0484400F2AE7AB4600A19AA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		048440162AE7B21800A19AA8 /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
 		048440192AE7BB6800A19AA8 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		0484401E2AE7CA3E00A19AA8 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		048440202AE7D03200A19AA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		048440222AE8AAF100A19AA8 /* FrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046B77092AE8C6B600E1CC48 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				046B770A2AE8C6C200E1CC48 /* NavigationStackView.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 		04843FFC2AE7AB4400A19AA8 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +75,7 @@
 		048440072AE7AB4400A19AA8 /* Learning-UI */ = {
 			isa = PBXGroup;
 			children = (
+				046B77092AE8C6B600E1CC48 /* Testing */,
 				0484401D2AE7C9F600A19AA8 /* FrameworkView */,
 				048440182AE7BB6000A19AA8 /* Model */,
 				048440082AE7AB4400A19AA8 /* Learning_UIApp.swift */,
@@ -88,9 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				048440192AE7BB6800A19AA8 /* MockData.swift */,
-				0484400A2AE7AB4400A19AA8 /* ContentView.swift */,
+				0484400A2AE7AB4400A19AA8 /* FrameworkView.swift */,
 				0484401E2AE7CA3E00A19AA8 /* FrameworkDetailView.swift */,
 				048440202AE7D03200A19AA8 /* Extensions.swift */,
+				048440222AE8AAF100A19AA8 /* FrameworkViewModel.swift */,
+				046B77052AE8B99400E1CC48 /* MyViewController.swift */,
+				046B77072AE8BB3700E1CC48 /* ImageController.swift */,
 			);
 			path = FrameworkView;
 			sourceTree = "<group>";
@@ -165,11 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046B77062AE8B99400E1CC48 /* MyViewController.swift in Sources */,
 				048440172AE7B21800A19AA8 /* LazyVGridView.swift in Sources */,
 				048440212AE7D03200A19AA8 /* Extensions.swift in Sources */,
+				046B770B2AE8C6C200E1CC48 /* NavigationStackView.swift in Sources */,
 				0484401F2AE7CA3E00A19AA8 /* FrameworkDetailView.swift in Sources */,
+				048440232AE8AAF100A19AA8 /* FrameworkViewModel.swift in Sources */,
+				046B77082AE8BB3700E1CC48 /* ImageController.swift in Sources */,
 				0484401A2AE7BB6800A19AA8 /* MockData.swift in Sources */,
-				0484400B2AE7AB4400A19AA8 /* ContentView.swift in Sources */,
+				0484400B2AE7AB4400A19AA8 /* FrameworkView.swift in Sources */,
 				048440092AE7AB4400A19AA8 /* Learning_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
